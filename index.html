@@ -22,7 +22,7 @@
 		$(document).ready(function(){
 			var hash = window.location.hash.substr(1);
 			if(hash && hash.length){
-				var ul = btoa(hash);
+				var ul = atob(hash);
 				setTimeout(function(){
 					window.location = ul;
 				},1500)
